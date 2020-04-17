@@ -4,6 +4,7 @@ from database import *
 
 def load_dyk():
     """ Loads all the fun facts from https://www.did-you-knows.com into our nifty database """
+    db = Database()
     BASE_URL = "https://www.did-you-knows.com/?page="  # Goes up to 50
     
     for i in range(1,51):
@@ -17,7 +18,6 @@ def load_dyk():
             facts = [proc_insert(fact) for fact in facts]
             facts = [fact for fact in facts if fact] #This is not super efficient for the computer, but it is for me :)
 
-            db = Database()
             for fact in facts:
                 db.insert(fact)
                 
