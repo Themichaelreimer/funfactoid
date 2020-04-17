@@ -3,6 +3,7 @@ This project is dedicated to the acquisition and distribution of fun, amusing, a
 
 # Prerequisites
 Python 3.5 or greater, sqlite3.
+
 For now there is an autohotkey script to run on my spare laptop, which will send unsolicited fun facts in various chat windows. 
 This may eventually be replaced with an API and a bot that makes use of that API.
 
